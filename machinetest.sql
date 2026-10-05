@@ -26,4 +26,4 @@ SELECT Department, SUM(leaves) AS total_leaves FROM Employee GROUP BY Department
 
 SELECT Employee.Name FROM Employee JOIN Exam ON Employee.id = Exam.Employee_id WHERE Exam.exam_status = 'pass';
 
-SELECT Employee.Name FROM Employee LEFT JOIN Exam ON Employee.id = Exam.Employee_id WHERE Exam.Employee_id IS NULL;
+SELECT Employee.Name FROM Employee LEFT JOIN Exam ON Employee.id = Exam.Employee_id WHERE Exam.Employee_id is NULL;
